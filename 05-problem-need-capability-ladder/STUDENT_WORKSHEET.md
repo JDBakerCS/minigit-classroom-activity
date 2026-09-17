@@ -2,8 +2,6 @@
 
 ## Scenarios
 
-Your instructor may assign one scenario, or your group may select one.
-
 ### Scenario A — Forgotten file
 
 Maya edits `main.cpp` and `README.md`. Before saving the next project version, she remembers `main.cpp` but overlooks `README.md`. The submitted version contains the code change but not the required instructions.
