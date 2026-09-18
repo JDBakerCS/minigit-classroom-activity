@@ -2,8 +2,8 @@
 
 You receive two independently changed files:
 
-- `student_file_a.cpp` validates score ranges.
-- `student_file_b.cpp` displays the highest score.
+- `student_file_a.cpp` validates score ranges, calculates and prints their average score
+- `student_file_b.cpp` reads the three scores and prints the highest score
 
 Create `combined.cpp` with both features. Do not use Git or an automatic comparison/merge tool.
 
@@ -32,9 +32,9 @@ __the event could accidently delete some code or overwriting good code. In my ca
 
 **UN:** A developer needs a way to ___compile the code before turning it in. ___________________________________
 
-because ________otherwise the dev wouldnt know the code is incomplete.________________________________________________________.
+because ________otherwise the dev wouldnt be sure if the code runs_______________________________________________________.
 
-**UR:** A developer shall be able to _run their and debug their code everytime and not assume it is all there.__________________________________.
+**UR:** A developer shall be able to _run and debug their code everytime and not assume it is all there.__________________________________.
 
 ## Example
 
