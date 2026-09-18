@@ -30,25 +30,25 @@ A team’s saved versions are described as “update,” “more work,” and �
 
 ## Your ladder
 
-**1. Evidence:** ________________________________________________________
+**1. Evidence:** _Maya edits two files. one doc and one with code but only includes the code file. so the newest version does not have the instructions or documentation of the changes to main_______________________________________________________
 
-**2. Problem:** _________________________________________________________
+**2. Problem:** _the new verison lacks the instructions that go with the changes in main________________________________________________________
 
-**Consequence:** ________________________________________________________
+**Consequence:** _The team involved will have to deduce the changes to main along with anything in the project affected by it_______________________________________________________
 
-**3. Desired outcome:** _________________________________________________
+**3. Desired outcome:** _she commits both file edits she intended to package together________________________________________________
 
-**4. UN:** A __________________ needs a way to ___________________________
+**4. UN:** A ___dev _______________ needs a way to __double check every file they wanted to include in the next version are staged commited and pushed for the PR review_________________________
 
-because ________________________________________________________________.
+because ___without a way to make sure, you are only assuming_____________________________________________________________.
 
-**5. UR-01:** A __________________ shall be able to ______________________.
+**5. UR-01:** A _dev_________________ shall be able to __view a list of all staged and unstaged file modifications____________________.
 
-**UR-02:** A __________________ shall be able to _________________________.
+**UR-02:** A ____dev______________ shall be able to _review specific diffs in modified files prior to saving a version________________________.
 
-**UR-03 (if needed):** A __________________ shall be able to ____________.
+**UR-03 (if needed):** A __dev________________ shall be able to __verify which files are staged for the next commit__________.
 
-**6. Supporting command(s):** __________________________________________
+**6. Supporting command(s):** ___git status git diff git add git diff --staged_______________________________________
 
 ## Worked example—not one of the assigned scenarios
 
