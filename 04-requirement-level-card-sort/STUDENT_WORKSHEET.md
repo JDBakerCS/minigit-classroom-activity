@@ -41,37 +41,37 @@ Use O, P, UN, or UR.
 
 | # | Statement | Type | Explanation |
 |---:|---|---|---|
-| 1 | A student edited two files but selected only one. |  |  |
-| 2 | The next project version may omit required work. |  |  |
-| 3 | A developer needs a way to understand current work because overlooked changes can produce an incomplete version. |  |  |
-| 4 | A developer shall be able to identify changed files. |  |  |
-| 5 | Temporary debugging output appeared in the saved program. |  |  |
-| 6 | Unintended content may reduce software quality. |  |  |
-| 7 | Three versions were all described as “update.” |  |  |
-| 8 | The team cannot determine the purpose of an earlier version. |  |  |
+| 1 | A student edited two files but selected only one. | O | this can be visually verified in the UI |
+| 2 | The next project version may omit required work. | P | explains the potential risk and negative impact of leaving out a file  |
+| 3 | A developer needs a way to understand current work because overlooked changes can produce an incomplete version. | UN  | explains a part of what a user needs, desired capability and technical justification  |
+| 4 | A developer shall be able to identify changed files. | UR | "shall" is used to define a verifiable functional requirement  |
+| 5 | Temporary debugging output appeared in the saved program. | O  | refers to evidence in the saved program or output |
+| 6 | Unintended content may reduce software quality. | P  | Describes the harm and reduction in quality caused by the debug output |
+| 7 | Three versions were all described as “update.” | O | Countable, verifiable factual record of commit message text |
+| 8 | The team cannot determine the purpose of an earlier version. | P | refers to a bottleneck during production from the vague description  |
 
 ## Create a derivation
 
-Observation: ____________________________________________________________
+Observation: _Three saved verisons were all described as "update___________________________________________________________
 
-Problem: ________________________________________________________________
+Problem: __Team cannot determine the purpose or changes in an earlier version.______________________________________________________________
 
-UN: ____________________________________________________________________
+UN: A developer needs a way to attach descriptive messages to project checkpoints because vague labels make revision history unreadable.
 
-UR: ____________________________________________________________________
+UR: __a version control system shall require the user to provide a text description before saving a new revision snapshot____________________________________________________________________
 
 ## Explain your distinction
 
 Complete both sentences for your derivation:
 
-> We saw that ___________________________________________________________.
+> We saw that _three saved versions were all described as "update"__________________________________________________________.
 
-> This matters because __________________________________________________.
+> This matters because __becasue the team cannot determine the purpose or changes in an earlier version________________________________________________.
 
 How could another person verify your observation?
 
-________________________________________________________________________
+_run git log in the terminal and read the exact texted stored for each commit message_______________________________________________________________________
 
 What harm, difficulty, or risk makes your problem important?
 
-________________________________________________________________________
+___Teammates end up wasting time digging through old code lines to figure out what changed, or worse, restoring the wrong broken version during a rollback._____________________________________________________________________
